@@ -9,6 +9,7 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    padding-top: 80px; /* Deja un espacio adicional en la parte superior */
 }
 
 /*Encabezado*/
@@ -67,11 +68,12 @@ h2 {
 
 form {
     background: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
+    margin-top: 80px;
 }
 
 label {
@@ -111,49 +113,6 @@ button:hover {
     }
 }
 
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #8b8b8b;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px 4px 6px rgb(136, 136, 136);
-    border-radius: 0 0 10px 10px;
-    z-index: 10;
-    flex-wrap: wrap;
-    
-    text-align: center;
-}
-
-header img {
-    width: 85px;
-    height: 85px;
-}
-
-nav {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-nav a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.945);
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 10px;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #ee2bf5;
-}
 
 footer {
     background: #8b8b8b;
