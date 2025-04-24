@@ -1,0 +1,211 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: linear-gradient(95deg, #e659a6, #868684, #7681e4);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/*Encabezado*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #8b8b8b;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 6px rgb(136, 136, 136);
+    border-radius: 0 0 10px 10px;
+    z-index: 10;
+    flex-wrap: wrap;
+    
+    text-align: center;
+}
+header h1{
+    text-align: center;
+    text-decoration: solid;
+    font-family: cursive;
+}
+header img {
+    width: 85px;
+    height: 85px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.945);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ee2bf5;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e91e63;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #8b8b8b;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 6px rgb(136, 136, 136);
+    border-radius: 0 0 10px 10px;
+    z-index: 10;
+    flex-wrap: wrap;
+    
+    text-align: center;
+}
+
+header img {
+    width: 85px;
+    height: 85px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.945);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ee2bf5;
+}
+
+footer {
+    background: #8b8b8b;
+    color: white;
+    padding: 1px 10px;
+    /* Reduce el padding para hacerlo más pequeño */
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    font-size: 14px;
+    /* Ajusta el tamaño de fuente */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    /* Añade un pequeño padding a la contenedor */
+}
+.contacto,
+.ubicacion {
+    width: 45%;
+    min-width: 300px;
+    /* Ajusta el tamaño de las secciones */
+    margin-bottom: 10px;
+}
+
+.contacto h3,
+.ubicacion h3 {
+    font-size: 16px;
+    /* Tamaño de fuente más pequeño */
+    border-bottom: 2px solid #ff758c;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.contacto p,
+.ubicacion p {
+    margin: 5px 0;
+    font-size: 12px;
+    /* Tamaño de fuente reducido para el texto */
+}
+
+iframe {
+    width: 200px;
+    /* Ajusta el tamaño del mapa */
+    height: 150px;
+    border-radius: 8px;
+    margin-top: 10px;
+}

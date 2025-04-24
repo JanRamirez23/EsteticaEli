@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estetica</title>
+    <link rel="stylesheet" href="estilos/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.jpg" alt="logotipo">
+        <h1>Estética Eli</h1>
+        <nav>
+            <a href="index.html"> <i class="fas fa-home"></i> Inicio</a>
+            <a href="#servicios"> <i class="fas fa-cut"></i>Servicios</a>
+            <a href="#ubicacion"><i class="fas fa-map-marker-alt"></i>Ubicación</a>
+            <a href="#contacto"><i class="fas fa-envelope"></i>Contacto</a>
+        </nav>
+    </header>
+
+    <section id="carrusel">
+        <!-- Carrusel de imágenes -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="img/estetica.jpg" alt="Servicio 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/estetica.jpg" alt="Servicio 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/estetica.jpg" alt="Servicio 3">
+                </div>
+            </div>
+
+            <!-- Botones de navegación -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <!-- Fin del carrusel -->
+    </section>
+    <section id="servicios">
+        <h2>Servicios que ofrecemos</h2>
+        <div class="servicios-container">
+            <div class="servicio">
+                <img src="Servicios/img/gelish_rosa.jpg" alt="gelish_blanca">
+                <h3>Uñas</h3>
+                <p>Diseños personalizados y más.</p>
+                <a href="servicios/uñas.html" class="btn-ver-mas">Ver más</a>
+            </div>
+            <div class="servicio">
+                <img src="Servicios/img/peinados_1.jpg" alt="peinado">
+                <h3>Peinado</h3>
+                <p>Peinados para todo tipo de ocasiones.</p>
+                <a href="servicios/peinado.html" class="btn-ver-mas">Ver más</a>
+            </div>
+            <div class="servicio">
+                <img src="Servicios/img/maquillaje_1.jpg" alt="maquillaje">
+                <h3>Maquillaje</h3>
+                <p>Maquillaje profesional para eventos especiales.</p>
+                <a href="servicios/maquillaje.html" class="btn-ver-mas">Ver más</a>
+            </div>
+            <div class="servicio">
+                <img src="Servicios/img/cortes.jpg" alt="cortes">
+                <h3>Corte</h3>
+                <p>Cortes de cabello para hombres y mujeres.</p>
+                <a href="servicios/cortes.html" class="btn-ver-mas">Ver más</a>
+            </div>
+            <div class="servicio">
+                <img src="Servicios/img/planchado.jpg" alt="laminado">
+                <h3>Laminado de Cejas</h3>
+                <p>Diseño y depilación de cejas.</p>
+                <a href="servicios/planchado.html" class="btn-ver-mas">Ver más</a>
+            </div>
+            <div class="servicio">
+                <img src="Servicios/img/rizado.jpg" alt="rizado">
+                <h3>Risado de Pestañas</h3>
+                <p>Risado de pestañas para un look natural.</p>
+                <a href="servicios/rizado.html" class="btn-ver-mas">Ver más</a>
+            </div>
+            <div class="servicio">
+                <img src="Servicios/img/manicure.jpg" alt="manicure">
+                <h3>Manicure</h3>
+                <p>Manicure completo con esmaltes de alta calidad.</p>
+                <a href="servicios/manicure.html" class="btn-ver-mas">Ver más</a>
+            </div>
+            <div class="servicio">
+                <img src="Servicios/img/pedicure.jpg" alt="pedicure">
+                <h3>Pedicure</h3>
+                <p>Cuidado y embellecimiento de los pies.</p>
+                <a href="servicios/pedicure.html" class="btn-ver-mas">Ver más</a>
+            </div>
+        </div>
+
+
+        <h2>Paquetes</h2>
+        <div class="servicios-container">
+            <div class="servicio">
+                <img src="Servicios/img/XV_2.jpg" alt="XVaños">
+                <h3>XV años</h3>
+                <p>Peinado, maquillaje, depilación</p>
+                <a href="servicios/xv.html" class="btn-ver-mas">Ver más</a>
+            </div>
+            <div class="servicio">
+                <img src="Servicios/img/boda_1.jpg" alt="XVaños">
+                <h3>Boda</h3>
+                <p>Peinado, maquillaje, depilación</p>
+                <a href="servicios/boda.html" class="btn-ver-mas">Ver más</a>
+            </div>
+    </section>
+    <div class="fixedcallicon">
+        <i class="fa fa-phone"></i><span class="hide">WhatsApp 729-169-3310</span>
+    </div>
+    <div class="fixedappointmenticon">
+        <a href="/citas/cita.html">
+            <i class="fa fa-calendar"></i> <span class="hide">Agendar Cita</span>
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="contacto">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-phone"></i> Teléfono: 729-169-3310</p>
+                <p><i class="fas fa-envelope"></i> Email: ramirezeli123ei@gmail.com</p>
+                <a href="https://www.facebook.com/profile.php?id=61567247588171" target="_blank">
+                    <i class="fab fa-facebook"></i> Síguenos en Facebook
+                </a>
+
+            </div>
+            <div class="ubicacion">
+                <h3>Ubicación</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Frente a la Deportiva Judicial de San Lorenzo Tepaltitlan.</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d235.3268284777127!2d-99.61659652956929!3d19.315855713719465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1743120359149!5m2!1ses!2smx"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" width="100" height="80" style="border:0;"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        let index = 0;
+
+        function moveSlide(step) {
+            const slides = document.querySelectorAll('.carousel-item');
+            const totalSlides = slides.length;
+
+            index = (index + step + totalSlides) % totalSlides; // Asegura que el índice esté en el rango correcto
+            const carousel = document.querySelector('.carousel');
+            carousel.style.transform = `translateX(-${index * 100}%)`; // Desplazamiento en el eje X
+        }
+
+        // Desplazamiento automático cada 3 segundos
+        setInterval(() => {
+            moveSlide(1); // Avanza al siguiente slide automáticamente
+        }, 3000);
+    </script>
+
+
+</body>
+
+</html>
