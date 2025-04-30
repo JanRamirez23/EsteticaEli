@@ -1,0 +1,163 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdfdfd;
+    margin: 0;
+    padding: 20px;
+}
+
+/*Encabezado*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #8b8b8b;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 6px rgb(136, 136, 136);
+    border-radius: 0 0 10px 10px;
+    z-index: 10;
+    flex-wrap: wrap;
+    text-align: center;
+}
+header h1{
+    text-align: center;
+    text-decoration: solid;
+    font-family: cursive;
+}
+header img {
+    width: 85px;
+    height: 85px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.945);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ee2bf5;
+}
+
+h2 {
+    text-align: center;
+    color: #d14d72;
+    margin-bottom: 40px;
+    padding: 80px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+   /* padding: 70px;*/
+}
+
+.tarjeta {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.tarjeta:hover {
+    transform: scale(1.03);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contenido {
+    padding: 15px;
+}
+
+.contenido h4 {
+    margin: 0;
+    color: #333;
+}
+
+.contenido p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.precio {
+    color: #d14d72;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*pie de pagina*/
+footer {
+    background: #8b8b8b;
+    color: white;
+    padding: 1px 20px;
+    /* Reduce el padding para hacerlo más pequeño */
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    font-size: 14px;
+    /* Ajusta el tamaño de fuente */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    /* Añade un pequeño padding a la contenedor */
+}
+.contacto,
+.ubicacion {
+    width: 45%;
+    min-width: 300px;
+    /* Ajusta el tamaño de las secciones */
+    margin-bottom: 10px;
+}
+
+.contacto h3,
+.ubicacion h3 {
+    font-size: 16px;
+    /* Tamaño de fuente más pequeño */
+    border-bottom: 2px solid #ff758c;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.contacto p,
+.ubicacion p {
+    margin: 5px 0;
+    font-size: 12px;
+    /* Tamaño de fuente reducido para el texto */
+}
+
+iframe {
+    width: 200px;
+    /* Ajusta el tamaño del mapa */
+    height: 150px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
