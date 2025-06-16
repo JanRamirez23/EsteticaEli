@@ -19,7 +19,7 @@
 
         <!-- Botón hamburguesa -->
         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <nav>
+        <nav id="navMenu">
             <a href="index.html"> <i class="fas fa-home"></i> Inicio</a>
             <a href="#servicios"> <i class="fas fa-cut"></i>Servicios</a>
             <a href="#ubicacion"><i class="fas fa-map-marker-alt"></i>Ubicación</a>
@@ -174,7 +174,7 @@
             moveSlide(1); // Avanza al siguiente slide automáticamente
         }, 3000);
     </script>
-    
+
     <script>
         function toggleMenu() {
             var menu = document.getElementById("navMenu");
