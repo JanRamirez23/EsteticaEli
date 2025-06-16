@@ -16,6 +16,9 @@
     <header>
         <img src="img/logo.jpg" alt="logotipo">
         <h1>Estética Eli</h1>
+
+        <!-- Botón hamburguesa -->
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <nav>
             <a href="index.html"> <i class="fas fa-home"></i> Inicio</a>
             <a href="#servicios"> <i class="fas fa-cut"></i>Servicios</a>
@@ -170,6 +173,13 @@
         setInterval(() => {
             moveSlide(1); // Avanza al siguiente slide automáticamente
         }, 3000);
+    </script>
+    
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navMenu");
+            menu.classList.toggle("show");
+        }
     </script>
 
 
