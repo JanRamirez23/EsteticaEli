@@ -1,3 +1,103 @@
+/* ===================== RESPONSIVE DESIGN ===================== */
+
+/* Pantallas de hasta 1024px (tabletas) */
+@media (max-width: 1024px) {
+    .servicios-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto, .ubicacion {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+}
+
+/* Pantallas de hasta 768px (celulares en horizontal) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header img {
+        width: 70px;
+        height: 70px;
+    }
+
+    header h1 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .servicios-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+
+    .fixedcallicon,
+    .fixedappointmenticon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .fixedcallicon:hover {
+        width: 180px;
+    }
+
+    .fixedappointmenticon:hover {
+        width: 180px;
+    }
+}
+
+/* Pantallas de hasta 480px (celulares en vertical) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .btn-ver-mas {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 120px;
+    }
+}
+
 body {
     font-family: Arial, sans-serif;
     /*background: linear-gradient(to bottom, #eb99d2, #92abf0de); */
