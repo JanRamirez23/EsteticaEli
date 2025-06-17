@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendar Cita - Estética</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="../citas/estile/cita.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Audiowide">
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap">
+    <link rel="stylesheet" href="citas/estile/cita2.css">
 </head>
 
 <body>
@@ -16,7 +19,6 @@
         <nav>
             <a href="../index.html"> <i class="fas fa-home"></i> Inicio</a>
             <a href="../index.html"> <i class="fas fa-cut"></i>Servicios</a>
-            <a href="../citas/cita.html"><i class="fas fa-calendar-check"></i>Citas</a>
             <a href="#ubicacion"><i class="fas fa-map-marker-alt"></i>Ubicación</a>
             <a href="#contacto"><i class="fas fa-envelope"></i>Contacto</a>
         </nav>
@@ -43,7 +45,7 @@
 
         <button type="submit">Reservar</button>
     </form>
-
+    <br>
     <footer>
         <div class="footer-container">
             <div class="contacto">
@@ -69,5 +71,23 @@
     </footer>
 
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch('./php/servicios.php')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data); // <-- Esto debe mostrar el array de servicios en la consola
+                const select = document.getElementById('servicio');
+                data.forEach(servicio => {
+                    const option = document.createElement('option');
+                    option.value = servicio.id;
+                    option.textContent = servicio.nombre;
+                    select.appendChild(option);
+                });
+            })
+            .catch(error => console.error('Error al cargar servicios:', error));
+    });
+
+</script>
 
 </html>
