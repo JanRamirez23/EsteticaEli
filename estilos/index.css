@@ -169,7 +169,6 @@ h2{
 .servicio p {
     font-size: 14px;
     color: #666;
-
 }
 
 .servicio img {
@@ -182,6 +181,18 @@ h2{
     object-fit: cover;
 }
 
+.servicio:hover {
+    transform: scale(1.05);
+}
+/*PEINADO*/
+.peinado{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   /* text-align: center;*/
+    transition: transform 0.3s ease-in-out;
+}
 .peinado img {
     width: 100%;         /* Ocupa todo el ancho del contenedor */
     max-width: 300px;    /* Tamaño máximo de la imagen */
@@ -192,7 +203,18 @@ h2{
     object-fit: cover;
 }
 
-.servicio:hover {
+.peinado h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.peinado p {
+    font-size: 14px;
+    color: #666;
+}
+
+.peinado:hover{
     transform: scale(1.05);
 }
 
@@ -205,7 +227,6 @@ h2{
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s;
-    
     
 }
 

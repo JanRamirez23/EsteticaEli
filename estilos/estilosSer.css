@@ -1,4 +1,3 @@
-/*ENCABEZADO*/
 body {
     font-family: Arial, sans-serif;
     /*background: linear-gradient(to bottom, #eb99d2, #92abf0de); */
@@ -38,8 +37,8 @@ header h1{
  
 }
 header img {
-    width: 85px;
-    height: 85px;
+    width: 90px;
+    height: 90px;
 }
 
 nav {
@@ -65,8 +64,17 @@ nav a {
 nav a:hover {
     color: #ee2bf5;
 }
-/*////*/
+
 /*SERVICIOS*/
+h3{
+    text-align: center;
+    font-size: 2rem; /* o el tamaño que prefieras */
+    font-weight: bold;
+    background-color: #000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: sans-serif;
+}
 h2{
     /*margin-top: 10px;
     font-size: 30px;
@@ -108,24 +116,36 @@ h2{
     text-align: center;
 }
 
-
 .servicio p {
     font-size: 14px;
     color: #666;
 }
 
 .servicio img {
-    width: 100%;         /* Ocupa todo el ancho del contenedor */
-    max-width: 350px;    /* Tamaño máximo de la imagen */
-    height: 200px;
+    width: 200%;               /* Ocupa el ancho disponible */
+    max-width: 350px;          /* Tamaño máximo razonable */
+    height: 250px;             /* Alto fijo */
+    object-fit: contain;       /* Reduce sin recortar */
+    background-color: #fff;    /* Relleno si no llena toda el área */
     display: block;
-    margin: 0 auto 10px; /* Centrada y espacio inferior */
-    border-radius: 10px; /* Bordes redondeados */
-    object-fit: cover;
+    margin: 0 auto 10px;
+    border-radius: 10px;
 }
 
 .servicio:hover {
     transform: scale(1.05);
+}
+
+.info-servicio {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    text-align: center;
+}
+
+.servicio:hover .info-servicio {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 

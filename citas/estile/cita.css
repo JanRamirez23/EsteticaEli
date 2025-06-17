@@ -1,15 +1,14 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: linear-gradient(95deg, #e659a6, #868684, #7681e4);
+    /*background: linear-gradient(to bottom, #eb99d2, #92abf0de); */
+    background: rgba(255, 255, 255, 0.774);
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     flex-direction: column;
-    padding-top: 80px; /* Deja un espacio adicional en la parte superior */
+    align-items: center;
+    height: auto; /* ← Importante */
+    padding-top: 100px; /* Ajusta según la altura de tu header */
 }
 
 /*Encabezado*/
@@ -17,8 +16,9 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #8b8b8b;
-    padding: 10px 10px;
+    /*background: #8b8b8b;*/
+    background: #f8abe1;/* #cad6f3;  /* #b7c9f5*/
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,13 +26,15 @@ header {
     border-radius: 0 0 10px 10px;
     z-index: 10;
     flex-wrap: wrap;
-    
     text-align: center;
 }
 header h1{
     text-align: center;
     text-decoration: solid;
-    font-family: cursive;
+    font-family: 'Sofia', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+ 
 }
 header img {
     width: 85px;
@@ -55,69 +57,83 @@ nav a {
     gap: 5px;
     padding: 10px;
     transition: color 0.3s;
+    font-family: "Sofia", sans-serif;
+    font-size: 20px;
 }
 
 nav a:hover {
     color: #ee2bf5;
 }
-
-h2 {
-    color: #333;
-    margin-bottom: 20px;
-}
-
 form {
     background: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 25px; /* Más padding para respirar */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     width: 100%;
-    max-width: 400px;
-    margin-top: 80px;
+    max-width: 500px; /* Un poco más ancho para que no se vea tan chico */
+    margin: 80px auto 40px auto; /* Centrar y dar espacio arriba y abajo */
+    box-sizing: border-box; /* Para que padding no expanda el ancho */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 20px 25px; /* Espacio entre filas y columnas */
 }
 
-label {
-    font-weight: bold;
+/* Etiquetas (labels) */
+form label {
+    font-weight: 600;
     display: block;
-    margin-top: 10px;
+    margin-bottom: 6px;
+    grid-column: span 1; /* Cada label en una celda */
 }
 
-input, select {
+/* Inputs y selects ocupan toda la columna */
+form input,
+form select {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+    padding: 10px 12px;
+    margin: 0;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
 }
 
-button {
+/* Para campos que deben ocupar ambas columnas (ejemplo: el botón y el div info-servicio) */
+#info-servicio,
+button[type="submit"] {
+    grid-column: 1 / -1; /* Ocupa las dos columnas */
+}
+
+/* Botón más destacado */
+button[type="submit"] {
     background-color: #ff4081;
     color: white;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 14px 0;
+    border-radius: 8px;
     cursor: pointer;
-    width: 100%;
-    margin-top: 15px;
-    font-size: 16px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
+button[type="submit"]:hover {
     background-color: #e91e63;
 }
 
-/* RESPONSIVE */
-@media (max-width: 480px) {
-    form {
-        width: 90%;
-    }
+/* Para etiquetas e inputs en un solo renglón (opcional) */
+/*
+form label, form input, form select {
+    display: inline-block;
+    vertical-align: middle;
 }
+*/
 
-
+/*pie de pagina*/
 footer {
     background: #8b8b8b;
     color: white;
-    padding: 1px 10px;
+    padding: 1px 20px;
     /* Reduce el padding para hacerlo más pequeño */
     text-align: center;
     width: 100%;
@@ -167,4 +183,73 @@ iframe {
     height: 150px;
     border-radius: 8px;
     margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+  .servicios-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+    form {
+        display: block;
+        max-width: 95%;
+        margin: 80px auto 40px auto;
+        padding: 15px 20px;
+    }
+
+    form label,
+    form input,
+    form select,
+    #info-servicio,
+    button[type="submit"] {
+        width: 100% !important;
+        grid-column: auto !important;
+        margin-bottom: 12px;
+    }
+}
+/* Botón hamburguesa oculto en escritorio */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* RESPONSIVE NAV */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #cad6f3;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav a {
+    padding: 10px 0;
+    font-size: 20px;
+    border-top: 1px solid #ccc;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: #000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
 }
