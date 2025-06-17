@@ -1,15 +1,12 @@
 <?php
-$servername = "localhost";  // IP o nombre del servidor
-$username = "root";         // Tu nombre de usuario de la base de datos
-$password = "";         // Tu contraseña de la base de datos
-$dbname = "estetica";              // Nombre de tu base de datos
+$host = "localhost";
+$user = "root";        // usuario por defecto en XAMPP
+$pass = "";            // contraseña por defecto en XAMPP es vacía
+$db   = "estetica";    // tu base de datos
 
-// Crear conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($host, $user, $pass, $db);
 
-// Comprobar conexión
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
-//echo "Conexión exitosa";
 ?>

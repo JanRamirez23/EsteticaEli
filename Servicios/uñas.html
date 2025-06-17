@@ -4,53 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <title>Galería de Uñas</title>
-    <link rel="stylesheet" href="/estilos/uñas.css">
+    <link rel="stylesheet" href="/estilos/estilosSer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Audiowide">
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap">
+
 </head>
 
 <body>
     <header>
         <img src="/img/logo.jpg" alt="logotipo">
         <h1>Estética Eli</h1>
-        <nav>
-            <a href="/index.html"> <i class="fas fa-home"></i> Inicio</a>
+
+        <!-- Botón hamburguesa -->
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <nav id="navMenu">
+            <a href="../index.html"> <i class="fas fa-home"></i> Inicio</a>
             <a href="#servicios"> <i class="fas fa-cut"></i>Servicios</a>
             <a href="#ubicacion"><i class="fas fa-map-marker-alt"></i>Ubicación</a>
             <a href="#contacto"><i class="fas fa-envelope"></i>Contacto</a>
         </nav>
     </header>
-
-    <h2>💅 Galería de Uñas</h2>
-
-    <div class="galeria">
-        <div class="tarjeta">
-            <img src="/img/uñas1.jpg" alt="Gelish al natural">
-            <div class="contenido">
-                <h4>Gelish al natural</h4>
-                <p>Diseño delicado con detalles florales.</p>
-                <p class="precio">$250.00</p>
+    <section id="servicios">
+        <h2>Catálogo de uñas</h2>
+        <h3>Uñas personalizadas y de diferentes estilos para diferentes eventos.</h3>
+        <div class="servicios-container">
+            <div class="servicio">
+                <img src="/Servicios/img/uñas/gelish_rosa.jpg">
+                <div class="info-servicio">
+                    <h3>Gelish</h3>
+                    <p>Precio:</p>
+                </div>
+            </div>
+            <div class="servicio">
+                <img src="/Servicios/img/uñas/gelish_blanca.jpg">
+                <div class="info-servicio">
+                    <h3>Gelish</h3>
+                    <p>Precio:</p>
+                </div>
+            </div>
+            <div class="servicio">
+                <img src="/Servicios/img/uñas/gelish_1.jpeg">
+                <div class="info-servicio">
+                    <h3>Gelish</h3>
+                    <p>Precio:</p>
+                </div>
+            </div>
+            <div class="servicio">
+                <img src="/Servicios/img/uñas/gelish_2.jpeg">
+                <div class="info-servicio">
+                    <h3>Gelish</h3>
+                    <p>Precio:</p>
+                </div>
+            </div>
+            <div class="servicio">
+                <img src="/Servicios/img/uñas/gelish_3.jpeg">
+                <div class="info-servicio">
+                    <h3>Gelish</h3>
+                    <p>Precio:</p>
+                </div>
+            </div>
+            <div class="servicio">
+                <img src="/Servicios/img/uñas/gelish_4.jpeg">
+                <div class="info-servicio">
+                    <h3>Gelish</h3>
+                    <p>Precio:</p>
+                </div>
+            </div>
+            <div class="servicio">
+                <img src="/Servicios/img/uñas/gelish_5.jpeg">
+                <div class="info-servicio">
+                    <h3>Gelish</h3>
+                    <p>Precio:</p>
+                </div>
+            </div>
+            <div class="servicio">
+                <img src="/Servicios/img/uñas/acrilico_1.jpeg">
+                <div class="info-servicio">
+                    <h3>Acrílico</h3>
+                    <p>Precio:</p>
+                </div>
+            </div>
+            <div class="servicio">
+                <img src="/Servicios/img/uñas/acrilico_2.jpeg">
+                <div class="info-servicio">
+                    <h3>Acrílico</h3>
+                    <p>Precio:</p>
+                </div>
+            </div>
+            <div class="servicio">
+                <img src="/Servicios/img/uñas/acrilico_3.jpeg">
+                <div class="info-servicio">
+                    <h3>Acrílico</h3>
+                    <p>Precio:</p>
+                </div>
+            </div>
+            <div class="servicio">
+                <img src="/Servicios/img/uñas/acrilico_4.jpeg">
+                <div class="info-servicio">
+                    <h3>Acrílico</h3>
+                    <p>Precio:</p>
+                </div>
+            </div>
+            <div class="servicio">
+                <img src="/Servicios/img/uñas/acrilico_5.jpeg">
+                <div class="info-servicio">
+                    <h3>Acrílico</h3>
+                    <p>Precio:</p>
+                </div>
             </div>
         </div>
-        <div class="tarjeta">
-            <img src="/img/uñas2.jpg" alt="Francesa Elegante">
-            <div class="contenido">
-                <h4>Francesa Elegante</h4>
-                <p>Clásico estilo francés con brillo.</p>
-                <p class="precio">$200.00</p>
-            </div>
-        </div>
-        <div class="tarjeta">
-            <img src="/img/uñas4.jpg" alt="Glamour Oro">
-            <div class="contenido">
-                <h4>Glamour Cáfe</h4>
-                <p>Toques dorados para una ocasión especial.</p>
-                <p class="precio">$300.00</p>
-            </div>
-        </div>
-
-        <!-- Puedes duplicar más tarjetas aquí -->
-    </div>
-
+    </section>
     <footer>
         <div class="footer-container">
             <div class="contacto">
@@ -64,7 +130,8 @@
             </div>
             <div class="ubicacion">
                 <h3>Ubicación</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Frente a la Deportiva Judicial de San Lorenzo Tepaltitlan.</p>
+                <p><i class="fas fa-map-marker-alt"></i> Frente a la Deportiva Judicial de San Lorenzo
+                    Tepaltitlan.</p>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d235.3268284777127!2d-99.61659652956929!3d19.315855713719465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1743120359149!5m2!1ses!2smx"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -76,5 +143,11 @@
     </footer>
 
 </body>
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("navMenu");
+        menu.classList.toggle("show");
+    }
+</script>
 
 </html>
